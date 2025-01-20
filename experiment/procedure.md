@@ -33,8 +33,7 @@ C.	There should be no air in the burette.<br><br>
 From the graph, we get 2.8 ml of NaOH required to reach the equivalence point.<br>
 
 The unknown concentration of HCl can determined as<br>
-
-V<sub>HCl<sub> × N<sub>HCl<sub>  = V<sub>NaOH<sub> × N<sub>NaOH<sub> <br><br>
+V<sub>HCL</sub> × N<sub>HCL</sub> = V<sub>NaOH</sub> × N<sub>NaOH</sub>
 
 where <b>V<sub>HCl<sub></b> = Volume of HCl taken (25ml), <b>N<sub>HCl<sub></b> = Conc. we have to find out, <b>V<sub>NaOH<sub></b> = Volume of NaOH added (2.8 ml), <b>N<sub>NaOH<sub></b> = Conc. of NaOH in normality (0.1 N) <br>
 
