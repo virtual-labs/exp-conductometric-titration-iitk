@@ -2,12 +2,12 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "For titration of HCl with NaOH, at the equivalence point the",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "pH will be maximum",
+        "b": "Conductivity will be minimum ",
+        "c": "Conductivity will be maximum",
+        "d": "pH will be minimum "
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -15,16 +15,16 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "In a conductometric titration, the equivalence point is reached when",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "The conductivity of the solution suddenly decreased",
+        "b": "The conductivity of the solution suddenly increased",
+        "c": "The conductivity of the solution remains constant",
+        "d": "The color of the solution changes"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -33,6 +33,57 @@
         "d": "Explanation 2"
       },
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The property of ion that primarily affects the conductivity during a conductometric titration is",
+      "answers": {
+        "a": "Molar mass",
+        "b": "Ionic mobility",
+        "c": "Ionic solvation",
+        "d": "Ionic polarizability"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following factor does NOT affect the accuracy of a conductometric titration",
+      "answers": {
+        "a": "Fluctuation in temperature",
+        "b": "Rate of addition of titrant",
+        "c": "Volume of the titrant added in each step",
+        "d": "Presence of impurity"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In conductometric titration of a strong acid with a strong base, the conductivity initially decreases and then increases. The increase is due to",
+      "answers": {
+        "a": "Excess H+ ions",
+        "b": "Excess OH– ions",
+        "c": "Dissociation of the salt",
+        "d": "Formation of water"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
