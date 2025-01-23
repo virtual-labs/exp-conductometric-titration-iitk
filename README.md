@@ -1,25 +1,24 @@
 ## Introduction
 
 
-<b>Discipline | <b>Chemical Engineering
+<b>Discipline | <b>Fill your discipline name here
 :--|:--|
-<b> Lab | <b> Basic Chemistry Laboratory-II
-<b> Experiment|     <b> Conductometric titration of HCl vs NaOH 
+<b> Lab | <b> Fill your lab name here
+<b> Experiment|     <b> Fill your experiment name and number here
 
 ### About the Experiment 
 
-To determine unknown concentration of HCl by conductometric titration of HCl using NaOH. 
+Fill a brief description of this experiment here
 
-<b>Name of Developer | <b> Prof. Pratik Sen 
+<b>Name of Developer | <b> Fill the name of experiment owner here 
 :--|:--|
-<b> Institute | <b>Indian Institute of Technology Kanpur  
-<b> Email id|     <b>psen@iitk.ac.in  
-<b> Department |  Department of Chemistry
+<b> Institute | <b>  
+<b> Email id|     <b>  
+<b> Department |  
 
 ### Contributors List
 
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
-1 | Dhananjay Umrao | . | . | Indian Institute of Technology Kanpur | dumrao@iitk.ac.in
-2 | Khushboo Singh | . | . | Indian Institute of Technology Kanpur | skhushboo@iitk.ac.in
-3 | Harsh Dwivedi | . | . | Indian Institute of Technology Kanpur | harshd@iitk.ac.in
+1 | . | . | . | . | .
+2 | . | . | . | . | .
