@@ -2,7 +2,7 @@ An electrolytic solution is capable to conduct current due to the presence of io
 
 <img src="images/image_1.png"><br>
 
-The resistance (R) depends upon the nature and geometry of the conductor and κ is the specific conductance, i.e., the conductance of a tube of material 1 cm long having a cross section of 1 cm2. The unit of κ is mho cm<sup>–1</sup>.<br><br>
+The resistance (R) depends upon the nature and geometry of the conductor and κ is the specific conductance, i.e., the conductance of a tube of material 1 cm long having a cross section of 1 cm<sup>2</sup>. The unit of κ is mho cm<sup>–1</sup>.<br><br>
 
 The equivalent conductance (Λ: cm<sup>2</sup> Ohm<sup>–1</sup> mole<sup>–1</sup>) is defined as the conductance of a solution containing 1 gm-equivalent of electrolyte such that the entire solution is placed between two electrodes 1 cm apart. The specific conductance of an electrolyte solution is related to equivalent conductance by : <br>
 

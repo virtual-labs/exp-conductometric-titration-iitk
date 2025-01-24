@@ -19,7 +19,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "In a conductometric titration, the equivalence point is reached when",
+      "question": "In a conductometric titration between strong acid and strong base, the equivalence point is reached when",
       "answers": {
         "a": "The conductivity of the solution suddenly decreased",
         "b": "The conductivity of the solution suddenly increased",
@@ -32,7 +32,7 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
@@ -53,12 +53,12 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Which of the following factor does NOT affect the accuracy of a conductometric titration",
+      "question": "Among the following ions which one contributes most to the conductivity of the solution?",
       "answers": {
-        "a": "Fluctuation in temperature",
-        "b": "Rate of addition of titrant",
-        "c": "Volume of the titrant added in each step",
-        "d": "Presence of impurity"
+        "a": "Na⁺",
+        "b": "Cl⁻",
+        "c": "H⁺",
+        "d": "OH⁻"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -66,14 +66,14 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
       "question": "In conductometric titration of a strong acid with a strong base, the conductivity initially decreases and then increases. The increase is due to",
       "answers": {
-        "a": "Excess H+ ions",
-        "b": "Excess OH– ions",
+        "a": "Excess H⁺ ions",
+        "b": "Excess OH⁻ ions",
         "c": "Dissociation of the salt",
         "d": "Formation of water"
       },
