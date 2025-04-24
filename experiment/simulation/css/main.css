@@ -1,1 +1,371 @@
-/* You CSS goes in here */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header h1{
+  height: 3rem;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(22, 196, 127);
+}
+.container{
+  height: 90.7vh;
+  width: 99.9vw;
+  border: 1px solid black;
+  display: flex;
+  background-color: rgba(192, 85, 24, 0.744);
+}
+
+
+.tooltip {
+  position: absolute;
+  background: white;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 999;
+}
+
+
+.work{
+  height: 89vh;
+  width: 66vw;
+  position: relative;
+  margin-top: 1vh;
+  margin-left: 1vw;
+  border: 1px solid black;
+  display: inline-block;
+}
+.work #img1{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.work #img2{
+  height: 20%;
+  position: relative;
+  top: 11.7rem; left: 10rem;
+}
+
+.work #img2:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.work #img2a{
+  height: 28%;
+  position: relative;
+  top: 18.5rem; left: 8rem;
+}
+.work #img2b{
+  height: 28%;
+  position: relative;
+  top: 17.2rem; left: 8rem;
+}
+.container .reading {
+  height: 3%;
+  width: 3.2%;
+  text-align: center;
+  color: red;
+  position: relative;
+  background-color: rgba(20, 14, 14, 0.804);
+  top: 23.56rem; left: -44.2rem;
+  z-index: 1;
+} 
+
+.work #img3{
+  height: 18%;
+  position: relative;
+  top: 13.5rem; left: 16rem;
+  transform: rotate(50deg);
+}
+
+.work #img3:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  position: relative;
+  top: 11rem; left: 16rem;
+}
+ .work #img3a{
+  height: 18%;
+  position: relative;
+  top: 18rem; left: 24rem;
+  cursor: pointer;
+  
+}
+
+ @keyframes move {
+  0% {
+    top: 17rem; left: 24rem;
+  }
+  16.6% {
+    top: 11rem; left: 24rem;
+  }
+  33.3% {
+    top: 11rem; left: 16.5rem;
+  }
+  50% {
+    top: 16rem; left: 16.5rem;
+  }
+  60% {
+    top: 16rem; left: 16.5rem;
+  }
+  66.6% {
+    top: 11rem; left: 16.5rem;
+  }
+  83.3% {
+    top: 11rem; left: 24rem;
+  }
+  100% {
+    top: 17rem; left: 24rem;
+  } 
+}  
+.work #img3b{
+  height: 18%;
+  position: relative;
+  top: 16.5rem; left: 12rem;
+  cursor: pointer;
+}
+.work #img4{
+  height: 10rem;
+  position: relative;
+  top: 11rem; left: 2rem;
+}
+
+.work #img4:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.work #img4b{
+  height: 11rem;
+  position: relative;
+  top: 15rem; left: 12rem;
+  cursor: pointer;
+}
+.work #img4b:active {
+    scale: 1.1;
+    transition: 100ms;
+}
+.work #img5{
+  height: 13%;
+  position: relative;
+  top: 11rem; left: 8rem;
+}
+.work #img5:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.work #img5b{
+  height: 13%;
+  position: relative;
+  top: 15rem; left: 19rem;
+  cursor: pointer;
+  animation: none; 
+}
+
+ @keyframes move2 {
+  0% {
+    top: 15rem; left: 19rem;
+  }
+  20% {
+    top: 11rem; left: 19rem;
+  }
+  40% {
+    top: 12rem; left: 17rem;
+    transform: rotate(-90deg);
+  }
+  60% {
+    top: 12rem; left: 17rem;
+    transform: rotate(-90deg);
+  }
+  80% {
+    top: 11rem; left: 17rem;
+  }
+  100% {
+    top: 15rem; left: 19rem;
+  } 
+}  
+
+.work #img6{
+  height: 13%;
+  position: relative;
+  top: 11rem; left: 11.3rem;
+}
+
+.work #img6:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.work #img7{
+  height: 13%;
+  position: relative;
+  top: 11rem; left: 13rem;
+}
+.work #img7:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.work #img7a{
+  height: 13%;
+  position: relative;
+  z-index: 2;
+  top: 17rem; left: 12rem;
+}
+.work #img7b{
+  height: 13%;
+  position: relative;
+  top: 15rem; left: 11rem;
+  cursor: pointer;
+}
+
+@keyframes move4 {
+  0% { 
+    top: 16.5rem; left: 12rem;
+   }
+  14.2% {
+     top: 10rem; left: 12rem; 
+    }
+   28.5% {
+    top: 10rem; left: 18.5rem;
+    }
+    42.8% {
+      top: 13rem; left: 18.5rem; 
+     }
+     60% {
+      top: 13rem; left: 18.5rem; 
+     }
+     71% {
+      top: 10rem; left: 18.5rem; 
+     }
+     85% {
+      top: 10rem; left: 12rem;; 
+     }
+  100% { 
+    top: 16.5rem; left: 12rem;
+   }
+}
+ 
+@keyframes move5 {
+  0% { 
+    top: 16.5rem; left: 12rem;
+   }
+  14.2% {
+     top: 10rem; left: 12rem; 
+    }
+   28.5% {
+    top: 10rem; left: 18.5rem;
+    }
+    42.8% {
+      top: 13rem; left: 18.5rem; 
+     }
+     60% {
+      top: 13rem; left: 18.5rem; 
+     }
+     71% {
+      top: 10rem; left: 18.5rem; 
+     }
+     85% {
+      top: 10rem; left: 12rem;; 
+     }
+  100% { 
+    top: 16.5rem; left: 12rem;
+   }
+}
+.work #img8{
+  height: 13%;
+  position: relative;
+  top: 10rem; left: 0rem;
+}
+.work #img8:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.work #img8b{
+  height: 13%;
+  position: relative;
+  top: 15rem; left: 17rem;
+  cursor: pointer;
+  animation: none; 
+}
+
+ @keyframes move3 {
+  0% {
+    top: 15rem; left: 17rem;
+  }
+  20% {
+    top: 11rem; left: 17rem;
+  }
+  40% {
+    top: 11rem; left: 11rem;
+    transform: rotate(-90deg);
+  }
+  50% {
+    top: 11rem; left: 11rem;
+    transform: rotate(-90deg);
+  }
+  80% {
+    top: 11rem; left: 16rem;
+  }
+  100% {
+    top: 15rem; left: 17rem;
+  } 
+}  
+#instruction_h {
+  height: 89vh;
+  width: 20rem;
+  background-color: cornflowerblue;
+  margin-top: 1vh;
+  margin-left: 0.9vw;
+  border: 1px solid black;
+}
+
+
+#instruction_h h1{
+  background-color: #ff9c23d7;
+  margin: 2rem;
+  text-align: center;
+  border: 1px solid black;
+}
+#instruction_h h2{
+  background-color: cornflowerblue;
+  margin: 2rem;
+  text-align: center;
+ 
+}
+
+/* From Uiverse.io */ 
+.btn {
+  position: absolute;
+  bottom: 3rem;
+  left: 60%;
+  font-size: 1.2rem;
+  padding: 0.5rem 0.6rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  background-color: rgb(12, 12, 29);
+  color: rgb(234, 234, 234);
+  font-weight: 600;
+  transition: 0.6s;
+}
+.btn:active {
+  scale: 0.92;
+    letter-spacing: 3px;
+    transform: translateY(10px);
+    transition: 100ms;
+    text-decoration: none;
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 30px #0fc3d7f8;
+  background: rgb(2,29,78);
+  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  color: rgb(4, 4, 38);
+}
