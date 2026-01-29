@@ -91,6 +91,7 @@ body{
   position: absolute;
   top: 48vh;
   left: 10vw;
+  z-index: 9;
 }
 
 .work #img2b{
@@ -100,6 +101,7 @@ body{
   position: absolute;
   top: 48vh;
   left:10vw;
+  z-index: 99;
 }
 .container .reading {
   height: 2.5vh;
@@ -108,7 +110,7 @@ body{
   position: absolute;
   top: 59.6vh;
   left: 14.3vw;
-  z-index: 1;
+  z-index: 999;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,6 +142,7 @@ body{
   position: absolute;
   transform: translate(42.5vw, 48vh);
   cursor: pointer;
+  z-index: 9;
 
 }
 
@@ -318,7 +321,7 @@ body{
   position:absolute;
   max-width: 100%;
   top:52vh; left:32vw;
-  z-index: 2;
+  z-index: 9;
 }
 
 .work #img7b{
@@ -498,3 +501,4 @@ body{
 }
 
 
+/* for wire */
