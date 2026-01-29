@@ -30,8 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
-
 function speakInstruction(input) {
     let text = typeof input === "string" ? input : document.getElementById(input)?.innerText;
     
@@ -88,10 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
         
 
      img7b.addEventListener("click", function () {
-            // img7b.style.position = "absolute";
-            // img7b.style.transition = "all 2s ease-in-out";
-            // img7b.style.top = "-2.5vh";
-            // img7b.style.left = "-7vw";
+            
             img7b.style.transform = "translate(38vw, 51vh)";
                         //   translate(45vw, 54vh)
             let hand = document.getElementById("img9b");  // hand movement
@@ -102,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
          setTimeout(() => {
             document.getElementById("msg").innerHTML = "<h2> Now Click on the Beaker</h2>";
             speakInstruction("Now Click on the Beaker");
-        }, 7600);
+        }, 7300);
          
          let hand = document.getElementById("img9b");  // hand movement
              hand.style.transform = "translate(-45vw,-40vh)"
@@ -159,8 +154,8 @@ document.addEventListener("DOMContentLoaded", function () {
       
        
            setTimeout(() => {
-             alert("Your experiment is completed.");
-             speakInstruction("Your experiment is completed.");
+             alert("Your experiment is completed. Now click on Observation table button to see the observations.");
+             speakInstruction("Your experiment is completed. Now click on Observation table button to see the observations.");
            }, 50000);
            
      });
@@ -201,3 +196,31 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+//////////////
+const volumeData = [
+0.2,0.4,0.6,0.8,1.0,1.2,1.4,1.6,1.8,2.0,
+2.2,2.4,2.6,2.8,3.0,3.2,3.4,3.6,3.8,4.0,
+4.2,4.4,4.6,4.8,5.0,5.2,5.4,5.6,5.8,6.0,
+6.2,6.4,6.6,6.8,7.0
+];
+
+const conductanceData = [
+2.08,2.00,1.91,1.88,1.71,1.61,1.48,1.30,1.16,1.04,
+0.93,0.85,0.71,0.62,0.70,0.75,0.81,0.88,0.98,1.05,
+1.15,1.21,1.29,1.34,1.45,1.51,1.55,1.64,1.72,1.78,
+1.86,1.91,1.98,2.07,2.12
+];
+
+const tableBody = document.getElementById("tableBody");
+
+for (let i = 0; i < volumeData.length; i++) {
+    let row = document.createElement("tr");
+    row.innerHTML = `
+        <td>${i + 1}</td>
+        <td>${volumeData[i]}</td>
+        <td>${conductanceData[i]}</td>
+    `;
+    tableBody.appendChild(row);
+}
+
+// wire svg path connection function
