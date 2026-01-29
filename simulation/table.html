@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Observation Table</title>
+
+<style>
+/* --- General Reset & Body --- */
+body {
+    background-color: #c05518be;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    font-weight: bold;
+}
+
+/* --- Header Section --- */
+.lab-header {
+    width: 100%;
+    background-color: #41dac0;
+    border-bottom: 5px solid #42f3cf;
+}
+
+.header-title {    
+    background-color: #16c47f;
+    text-align: center;
+    padding: 15px 10px; 
+    width: 100%;
+    display: flex;            
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Thoda shadow diya */
+}
+
+.header-title h1 {
+    margin: 0;
+    font-size: 2.2rem; 
+    color: #070707;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+
+.main-container {
+    width: 100%;
+    flex: 1;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.result-panel {
+    background: transparent;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box; /* Padding width me count ho */
+}
+
+/* --- Headings --- */
+.section-heading {
+    color: #141617;
+    border-left: 8px solid #6a0dad;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+/* --- Table Styles --- */
+.table-container {
+    width: 100%;
+    max-height: 400px;
+    overflow-y: auto; 
+    overflow-x: auto; 
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    min-width: 300px; 
+}
+
+.data-table th {
+    background-color: #6a0dad;
+    color: white;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    text-align: center;
+    border: 1px solid #5a0b9e;
+    white-space: nowrap; /* Header text break na ho */
+}
+
+.data-table td {
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.data-table tr:nth-child(even) td {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.data-table tr:hover td {
+    background-color: #fff;
+}
+
+/* --- Graph Section --- */
+.graph-card {
+    border: 2px dashed #fff;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.graph-img {
+    max-width: 100%;
+    max-height: 70vh;   
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background-color: rgba(255,255,255,0.8);
+}
+
+/* --- Conclusion & Footer --- */
+.conclusion-box {
+    background: rgba(227, 242, 253, 0.9);
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #0d47a1;
+    margin: 0 20px;
+    border-radius: 8px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}  
+
+.btn {
+    background-color: #6a0dad;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+    background-color: #4b088a;
+    transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .header-title h1 {
+        font-size: 1.2rem; 
+    }
+
+    .result-panel {
+        padding: 10px; 
+    }
+
+    .data-table th, .data-table td {
+        padding: 8px 5px;
+        font-size: 0.9rem;
+    }
+
+    .graph-card {
+        padding: 10px;
+    }
+
+    .conclusion-box {
+        font-size: 1rem;
+        margin: 0 10px;
+        padding: 15px;
+    }
+
+    .section-heading {
+        font-size: 1.1rem;
+        padding: 8px 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Very Small Phones */
+    .header-title h1 {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        width: 80%; 
+        text-align: center;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="lab-header">
+    <div class="header-title">
+        <h1>Conductometric Titration of HCl vs NaOH</h1>
+    </div>
+</div>
+
+<div class="main-container">
+    <div class="result-panel">
+
+        <h2 class="section-heading">1. Observation Table</h2>
+        <div class="table-container">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Volume of NaOH (ml)</th>
+                        <th>Conductance (mho)</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+
+        <h2 class="section-heading">2. Result Graph</h2>
+        <div class="graph-card">
+            <img src="images/graph_image.png" alt="Graph showing titration curve" class="graph-img">
+        </div>
+
+    </div>
+
+    <div class="conclusion-box">
+        <strong>Result:</strong> From the graph, the equivalence point is observed at <strong>2.8 ml</strong>.
+    </div>
+</div>
+
+
+<div class="btn-container">
+    <a href="index.html" class="btn">Go To Home PAGE</a>
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

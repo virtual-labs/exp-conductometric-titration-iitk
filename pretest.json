@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "For titration of HCl with NaOH, at the equivalence point the",
+      "answers": {
+        "a": "pH will be maximum",
+        "b": "Conductivity will be minimum ",
+        "c": "Conductivity will be maximum",
+        "d": "pH will be minimum "
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In a conductometric titration between strong acid and strong base, the equivalence point is reached when",
+      "answers": {
+        "a": "The conductivity of the solution suddenly decreased",
+        "b": "The conductivity of the solution suddenly increased",
+        "c": "The conductivity of the solution remains constant",
+        "d": "The color of the solution changes"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The property of ion that primarily affects the conductivity during a conductometric titration is",
+      "answers": {
+        "a": "Molar mass",
+        "b": "Ionic mobility",
+        "c": "Ionic solvation",
+        "d": "Ionic polarizability"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Among the following ions which one contributes most to the conductivity of the solution?",
+      "answers": {
+        "a": "Na⁺",
+        "b": "Cl⁻",
+        "c": "H⁺",
+        "d": "OH⁻"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In conductometric titration of a strong acid with a strong base, the conductivity initially decreases and then increases. The increase is due to",
+      "answers": {
+        "a": "Excess H⁺ ions",
+        "b": "Excess OH⁻ ions",
+        "c": "Dissociation of the salt",
+        "d": "Formation of water"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}
