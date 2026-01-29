@@ -1,39 +1,86 @@
 <!DOCTYPE html>
- <html lang="en">
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conductometric Titration</title>
-    
     <link rel="stylesheet" href="./css/main.css">
-  </head>
-  <body>
-      <div class="header">
+</head>
+<body>
+    <div class="header">
         <h1>Conductometric Titration of HCl vs NaOH</h1>
-      </div>
-      <div class="container">
+    </div>
+
+    <div class="container">
         <div class="work">
-          <img id="img1" src="images/lab-img (2).jpg">
-          <img id="img2a" src="./images/Conductivity_Meter.png">
-          <img id="img3a" onclick="getElementById()" src="./images/Conductivity_Cell(2).png">
-          <img id="img7a" src="./images/Beaker.png" alt="">
-          <img id="img9a" src="images/hand.png" alt="">
-           </div>
-           <div class="reading">0.00</div>
-          <div id="instruction_h">
+            
+            <svg id="wire-svg" style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 1; pointer-events: none;">
+                <path id="connection-wire" d="" stroke="black" stroke-width="3.5" fill="none" stroke-linecap="round" />
+            </svg>
+
+            <img id="img1" src="images/lab-img (2).jpg" alt="Background">
+            <img id="img2a" src="./images/Conductivity_Meter.png" alt="Meter">
+            <img id="img3a" src="./images/Conductivity_Cell(2).png" alt="Cell">
+            <img id="img7a" src="./images/Beaker.png" alt="Beaker">
+            <img id="img9a" src="images/hand.png" alt="Hand">
+        </div>
+            <div class="reading">0.00</div>
+
+        <div id="instruction_h">
             <div>
-              <h1>Instructions</h1>
-              <!-- To titrate HCL, first take 25ml of hydrochloric acid solution and 25ml of distilled water to increase the volume -->
+                <h1>Instructions</h1>
             </div>
             <div id="msg">
-              <h2>The conductivity meter is in calibration mode. Click on Conductivity Cell.</h2>             
+                <h2>The conductivity meter is in calibration mode. Click on Conductivity Cell.</h2>             
             </div>
-           </div>
-      </div>
-      <div id="">
+        </div>
+    </div>
+
+    <div>
         <button class="btn"><a href="next.html">Next</a></button>
-      </div>
-      <script src="./js/main.js">
-      </script>
-    </body>
-    </html>
+    </div>
+
+    <script src="./js/main.js"></script>
+    
+    <script>
+        function connectWire() {
+            const wirePath = document.getElementById("connection-wire");
+            const container = document.querySelector(".work");
+            
+            const imgStart = document.getElementById("img2a"); // Meter
+            const imgEnd = document.getElementById("img3a");   // Probe
+
+            if (!imgStart || !imgEnd || !wirePath) {
+                console.error("Elements nahi mile! IDs check karein.");
+                return;
+            }
+
+            function updatePosition() {
+                const containerRect = container.getBoundingClientRect();
+                const startRect = imgStart.getBoundingClientRect();
+                const endRect = imgEnd.getBoundingClientRect();
+
+                const x1 = (startRect.left - containerRect.left) + (startRect.width / 2); 
+                const y1 = (startRect.top - containerRect.top) + (startRect.height / 2.5); 
+              
+                const x2 = (endRect.left - containerRect.left) + (endRect.width / 3);
+                const y2 = (endRect.top - containerRect.top) + 20; 
+
+                const cp1x = (x1 + x2) / 2;
+                const cp1y = y2 + 120; 
+                
+                const cp2x = x2; 
+                const cp2y = y2 - 150; 
+
+                const d = `M ${x1} ${y1} C ${cp1x} ${cp1y} ${cp2x} ${cp2y} ${x2} ${y2}`;
+                
+                wirePath.setAttribute("d", d);
+
+                requestAnimationFrame(updatePosition);
+            }
+            updatePosition();
+        }
+        window.addEventListener("load", connectWire);
+    </script>
+</body>
+</html>
