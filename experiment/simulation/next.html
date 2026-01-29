@@ -14,6 +14,11 @@
       </div>
       <div class="container">
         <div class="work">
+
+          <svg id="wire-svg" style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 1; pointer-events: none;">
+                <path id="connection-wire" d="" stroke="black" stroke-width="3.5" fill="none" stroke-linecap="round" />
+            </svg>
+
           <img id="img1" src="images/lab-img (2).jpg">
           <img id="img2b" src="./images/Conductivity_Meter.png">
           <img id="img3b" src="./images/Conductivity_Cell(2).png">
@@ -37,8 +42,50 @@
       <!-- <div id="">
         <button class="btn"><a href="simulation.html">Next</a></button>
       </div> -->
-
+      <div id="">
+        <button class="btn"><a href="table.html">Obs Table</a></button>
+      </div>
       
       <script src="./js/main.js"></script>
+       <script>
+        function connectWire() {
+            const wirePath = document.getElementById("connection-wire");
+            const container = document.querySelector(".work");
+            
+            const imgStart = document.getElementById("img2b"); // Meter
+            const imgEnd = document.getElementById("img3b");   // Probe
+
+            if (!imgStart || !imgEnd || !wirePath) {
+                console.error("Elements nahi mile! IDs check karein.");
+                return;
+            }
+
+            function updatePosition() {
+                const containerRect = container.getBoundingClientRect();
+                const startRect = imgStart.getBoundingClientRect();
+                const endRect = imgEnd.getBoundingClientRect();
+
+                const x1 = (startRect.left - containerRect.left) + (startRect.width / 1.2); 
+                const y1 = (startRect.top - containerRect.top) + (startRect.height / 3); 
+              
+                const x2 = (endRect.left - containerRect.left) + (endRect.width / 3);
+                const y2 = (endRect.top - containerRect.top) + 20; 
+
+                const cp1x = (x1 + x2) / 2;
+                const cp1y = y2 + 80; 
+                
+                const cp2x = x2; 
+                const cp2y = y2 - 130; 
+
+                const d = `M ${x1} ${y1} C ${cp1x} ${cp1y} ${cp2x} ${cp2y} ${x2} ${y2}`;
+                
+                wirePath.setAttribute("d", d);
+
+                requestAnimationFrame(updatePosition);
+            }
+            updatePosition();
+        }
+        window.addEventListener("load", connectWire);
+    </script>
     </body>
     </html>
