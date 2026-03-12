@@ -2,12 +2,12 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "During the initial stage of conductometric titration of HCl vs NaOH, what happens when NaOH is added to the HCl solution?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "b": "The conductivity of the solution decreases gradually",
+        "a": "The conductivity of the solution increases gradually",
+        "c": "The conductivity of the solution remains constant",
+        "d": "The conductivity of the solution fluctuates randomly"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -15,16 +15,16 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "The shape of the initial portion of the titration curve for the conductometric titration of HCl vs NaOH is ",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Sigmoidal ",
+        "b": "Linear",
+        "c": "Exponential",
+        "d": "Parabolic"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -32,7 +32,58 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following statements is FALSE about the equivalence point in the conductometric titration of HCl vs NaOH?",
+      "answers": {
+        "a": "At this point the pH is near 7",
+        "b": "At this point the conductivity abruptly increases ",
+        "c": "At this point the phenolphthalein indicator will not show a pink colour.",
+        "d": "At this point the volume of the titrant is equal to the volume of the analyte."
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The factor that does NOT affect the accuracy of a conductometric titration is",
+      "answers": {
+        "a": "Fluctuation in the temperature.",
+        "b": "Inadequate stirring after addition of titrant",
+        "c": "Uncertainty in the volume of the titrant",
+        "d": "Presence of ionic impurity in the analyte."
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Why is the conductivity at the equivalence point not zero?",
+      "answers": {
+        "a": "The solution contains hydrated H+ ions.",
+        "b": "The solution contains dissociated NaCl ions.",
+        "c": "Water contributes significantly to conductivity.",
+        "d": "Some unreacted NaOH remains in the solution."
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
